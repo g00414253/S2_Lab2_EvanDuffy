@@ -27,12 +27,21 @@ public class OnlineOrderingSystem {
         CaesarSalad.setName("Caesar Salad");
         CaesarSalad.setDescription("Croutons,Caesar Dressing");
 
+
+        //Takes Specific food class and adds to an Array as MenuItems
         MenuItem[] menuItems= new MenuItem[]{
                 cheeseBurger,PlainBurger,CheesePizza,HamPizza,CaesarSalad
         };
 
+        //Prints out toSting() for all the array Items
         for(MenuItem menuItem : menuItems) {
            System.out.println(menuItem.toString());
         }
+
+        double totalCost=0;
+        for(MenuItem menuItem : menuItems) {
+            totalCost=totalCost+ menuItem.getPrice();
         }
-    }
+        System.out.println("Total Cost:€" + totalCost);
+        }
+        }
