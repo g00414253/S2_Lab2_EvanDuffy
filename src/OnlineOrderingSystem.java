@@ -20,17 +20,29 @@ public class OnlineOrderingSystem {
         Pizza HamPizza = new Pizza();
         HamPizza.setName("Ham Pizza");
         HamPizza.setIngredients("Ham,Cheese");
-        HamPizza.setPrice(12.75);
+        HamPizza.setPrice(12.70);
 
         //Salad DB
         Salad CaesarSalad = new Salad();
         CaesarSalad.setName("Caesar Salad");
         CaesarSalad.setDescription("Croutons,Caesar Dressing");
+        CaesarSalad.setPrice(9.90);
+
+        //Dessert DB
+        Dessert Icecream =new Dessert();
+        Icecream.setName("Vanilla Icecream");
+        Icecream.setDescription("Vanilla icecream with a flake and syrups");
+        Icecream.setPrice(5.50);
+
+        Dessert Cake = new Dessert();
+        Cake.setName("Chocolate Cake");
+        Cake.setDescription("Freshly Baked chocolate cake");
+        Cake.setPrice(7.95);
 
 
         //Takes Specific food class and adds to an Array as MenuItems
         MenuItem[] menuItems= new MenuItem[]{
-                cheeseBurger,PlainBurger,CheesePizza,HamPizza,CaesarSalad
+                cheeseBurger,PlainBurger,CheesePizza,HamPizza,CaesarSalad,Icecream,Cake
         };
 
         //Prints out toSting() for all the array Items
